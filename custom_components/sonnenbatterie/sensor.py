@@ -379,7 +379,7 @@ class SonnenBatterieMonitor:
         for meter in meters:
             sensornamePrefix=allSensorsPrefix+"meter_"+("{0}_{1}_{2}".format( meter['direction'],meter['deviceid'],meter['channel']))
             sensornamePrefix=sensornamePrefix.lower()
-            generateSensorsFor={"w_l1","w_l2","w_l3","v_l1_n","v_l2_n","v_l3_n","v_l1_l2","v_l2_l3","v_l3_l1","w_total","a_l1","a_l2","a_l3"}
+            generateSensorsFor={"v_l1_n","w_total","a_l1"}
             
             for sensormeter in generateSensorsFor:
                 sensorname=sensornamePrefix+"_"+sensormeter
