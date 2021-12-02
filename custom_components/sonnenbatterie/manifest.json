@@ -1,9 +1,9 @@
 {
     "domain": "sonnenbatterie",
-    "name": "Sonnenbatterie",
+    "name": "Sonnenbatterie Fork",
     "documentation": "https://www.weltmeyer.net",
     "dependencies": [],
-    "codeowners": ["@weltmeyer"],
+    "codeowners": ["@robertovendrame"],
     "requirements": ["requests","sonnenbatterie>=0.1.1"],
     "config_flow": true,
 	"version": "2020.06.07"
