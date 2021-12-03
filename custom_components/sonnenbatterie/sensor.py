@@ -249,19 +249,6 @@ class SonnenBatterieMonitor:
                 LOGGER.error(e)
                 LOGGER.error(inverter)
 
-        if not "inverter_ppv" in self.disabledSensors:
-            try:
-                val=inverter['status']['ppv']
-                sensorname=allSensorsPrefix+"inverter_ppv"
-                unitname="W"
-                friendlyname="Inverter PPV1 - Hybrid Solar Power"
-                self._AddOrUpdateEntity(sensorname,friendlyname,val,unitname)
-            except:
-                self.disabledSensors.append("inverter_ppv")
-                e = traceback.format_exc()
-                LOGGER.error(e)
-                LOGGER.error(inverter)
-
 
 
          
